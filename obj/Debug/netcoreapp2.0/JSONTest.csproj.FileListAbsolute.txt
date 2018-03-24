@@ -1,0 +1,10 @@
+/Users/zelenakgellert/Development/DotNET/JSONTest/bin/Debug/netcoreapp2.0/JSONTest.deps.json
+/Users/zelenakgellert/Development/DotNET/JSONTest/bin/Debug/netcoreapp2.0/JSONTest.runtimeconfig.json
+/Users/zelenakgellert/Development/DotNET/JSONTest/bin/Debug/netcoreapp2.0/JSONTest.runtimeconfig.dev.json
+/Users/zelenakgellert/Development/DotNET/JSONTest/bin/Debug/netcoreapp2.0/JSONTest.dll
+/Users/zelenakgellert/Development/DotNET/JSONTest/bin/Debug/netcoreapp2.0/JSONTest.pdb
+/Users/zelenakgellert/Development/DotNET/JSONTest/obj/Debug/netcoreapp2.0/JSONTest.csproj.CoreCompileInputs.cache
+/Users/zelenakgellert/Development/DotNET/JSONTest/obj/Debug/netcoreapp2.0/JSONTest.AssemblyInfoInputs.cache
+/Users/zelenakgellert/Development/DotNET/JSONTest/obj/Debug/netcoreapp2.0/JSONTest.AssemblyInfo.cs
+/Users/zelenakgellert/Development/DotNET/JSONTest/obj/Debug/netcoreapp2.0/JSONTest.dll
+/Users/zelenakgellert/Development/DotNET/JSONTest/obj/Debug/netcoreapp2.0/JSONTest.pdb
