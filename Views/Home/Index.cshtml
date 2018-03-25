@@ -4,6 +4,38 @@
 
 @model JSONTest.Models.IndexViewModel
 
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+        $(function () {
+            $('#YourTextBox').change(function () {
+              //Content to send
+                var yourText = $(this).val();
 
-<h1>@Html.DisplayFor(model=>model.Persons.First())</h1>
-               
+                var UserData = { "Name": yourText }
+ 
+                $.ajax({
+                url: "@Url.Action("Names")",
+                type: "POST",
+                data: JSON.stringify(UserData),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                error: function (response) {
+                    alert("Error");
+            },
+                success: function (response) {
+                     $('#lister').html('List of results:');
+                    $.each(response, function (i, obj) {
+                       
+                        $('#lister').append('<div>'+(i+1)+'.'+obj.name+'</div>');   
+                    });
+                }
+            });
+
+            });
+        });
+</script>
+<!-- Your Textbox to trigger this event -->
+@Html.TextBox("YourTextBox")
+<div id="lister" style="font-size:large">Nothing yet.</div>
