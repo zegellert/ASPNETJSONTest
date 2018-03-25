@@ -20,9 +20,18 @@ namespace JSONTest.Controllers
         public IActionResult Index()
         {
             IndexViewModel viewModel=new IndexViewModel();
-            viewModel.Birth=dbcontext.Persons.Where(p=>p.Name.Equals("Joe")).FirstOrDefault().BirthDate;
+            viewModel.Persons=dbcontext.Persons.Where(p=>p.Name.Contains("s")).ToList();
             return View(viewModel);
         }
+
+        [HttpPost]
+[ValidateAntiForgeryToken]
+public IActionResult Names(string frag)
+{
+    var names = dbcontext.Persons.Where(x => x.Name.Contains(frag)).ToList();
+
+    return Json(names);
+}
 
         public IActionResult About()
         {

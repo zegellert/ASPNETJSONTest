@@ -12536,28 +12536,30 @@
     ]
   },
   "packageFolders": {
-    "/Users/zelenakgellert/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Gellert_Zelenak\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/zelenakgellert/Development/DotNET/JSONTest/JSONTest.csproj",
+      "projectUniqueName": "C:\\Development\\DotNET\\JSONTest\\ASPNETJSONTest\\JSONTest.csproj",
       "projectName": "JSONTest",
-      "projectPath": "/Users/zelenakgellert/Development/DotNET/JSONTest/JSONTest.csproj",
-      "packagesPath": "/Users/zelenakgellert/.nuget/packages/",
-      "outputPath": "/Users/zelenakgellert/Development/DotNET/JSONTest/obj/",
+      "projectPath": "C:\\Development\\DotNET\\JSONTest\\ASPNETJSONTest\\JSONTest.csproj",
+      "packagesPath": "C:\\Users\\Gellert_Zelenak\\.nuget\\packages\\",
+      "outputPath": "C:\\Development\\DotNET\\JSONTest\\ASPNETJSONTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/zelenakgellert/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Gellert_Zelenak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
