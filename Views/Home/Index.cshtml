@@ -9,11 +9,11 @@
         crossorigin="anonymous"></script>
 <script type="text/javascript">
         $(function () {
-            $('#YourTextBox').change(function () {
+            $('#TextBox').change(function () {
               //Content to send
-                var yourText = $(this).val();
+                var text = $(this).val();
 
-                var UserData = { "Name": yourText }
+                var UserData = { "Name": text }
  
                 $.ajax({
                 url: "@Url.Action("Names")",
@@ -36,6 +36,6 @@
             });
         });
 </script>
-<!-- Your Textbox to trigger this event -->
-@Html.TextBox("YourTextBox")
+
+@Html.TextBox("TextBox")
 <div id="lister" style="font-size:large">Nothing yet.</div>
