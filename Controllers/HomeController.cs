@@ -24,13 +24,17 @@ namespace JSONTest.Controllers
             return View(viewModel);
         }
 
-        [HttpPost]
-[ValidateAntiForgeryToken]
-public IActionResult Names(string frag)
-{
-    var names = dbcontext.Persons.Where(x => x.Name.Contains(frag)).ToList();
+        public class UserData
+        {
+            public string Name { get; set; }
+        }
 
-    return Json(names);
+        [HttpPost]
+public JsonResult Names([FromBody] UserData data)
+{
+    List<Person> names = dbcontext.Persons.Where(x => x.Name.Contains(data.Name)).ToList();
+            return Json(names);
+
 }
 
         public IActionResult About()
